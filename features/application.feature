@@ -6,7 +6,7 @@ Feature: Application
 
 Scenario: New Application
   Given I am on the main page
-  When I click on New Application
+  When I click on Account
   Then I should be on the New Application page
 
 
@@ -31,6 +31,6 @@ Scenario: Edit Application
 Scenario: Submit Application
   Given I am on the New Application Page
   When I leave all fields blank
-  And I press submit
+  And I press save
   Then I should receive an error message
 

@@ -1,13 +1,16 @@
-<h1>Add Post</h1>
+<h1>New Pass</h1>
 <%= form_for :pass, url: passes_path do |f| %>
+    
+ 
+    
   <p>>
-    <%= f.label :title %><br>
-    <%= f.text_field(:title, {:class => 'form-control'}) %>  
+    <%= f.label :name %><br>
+    <%= f.text_field(:name, {:class => 'form-control'}) %>  
   </p>
   
   <p>>
-    <%= f.label :body %><br>
-    <%= f.text_area(:body, {:class => 'form-control'}) %>  
+    <%= f.label :license %><br>
+    <%= f.text_area(:license, {:class => 'form-control'}) %>  
   </p>
   
   <p>

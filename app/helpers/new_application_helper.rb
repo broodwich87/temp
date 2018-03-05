@@ -1,0 +1,2 @@
+module NewApplicationHelper
+end

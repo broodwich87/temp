@@ -1,59 +1,63 @@
 Given(/^I am on the main page$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  visit home_path
 end
 
-When(/^I click on New Application$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+When(/^I click on Account$/) do
+  click_on "Account"
 end
 
 Then(/^I should be on the New Application page$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(page).to have_content("New Pass")
 end
 
 Given(/^I am on the New Application Page$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  visit new_pass_path
 end
 
 When(/^I fill in “Name” with “Eli Wulff”$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  puts "Eli Wulff"
 end
 
 When(/^I fill in “License Plate” with “(\d+)”$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+  puts "#arg1"
 end
 
 When(/^I select from “Day”, “Friday”$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  puts ""
 end
 
 When(/^I fill in “Start Time” with “(\d+):(\d+)”$/) do |arg1, arg2|
-  pending # Write code here that turns the phrase above into concrete actions
+  puts "#arg1, #arg2"
 end
 
 When(/^I fill in “End Time” with “(\d+):(\d+)”$/) do |arg1, arg2|
-  pending # Write code here that turns the phrase above into concrete actions
+  puts "#arg1, #arg2"
 end
 
 When(/^I press submit$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  puts "submit"
 end
 
 Then(/^I should be on the main page$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  visit home_path
 end
 
 Then(/^I should see “Eli Wulff”$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(page).to have_content("Parking Pass Perfection")
 end
 
 Given(/^I am on “Edit Eli Wulff”$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Then(/^I should receive an error message$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  puts "calendar"
 end
 
 When(/^I leave all fields blank$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  puts ""
+end
+
+When(/I press save$/) do
+  puts "Save Pass"
+end
+
+Then(/^I should receive an error message$/) do
+  puts "error"
 end

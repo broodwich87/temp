@@ -1,23 +1,23 @@
 Given(/^I am on the “Main Page”$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  visit home_path
 end
 
 When(/^I click on “View Calendar”$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  click_on "Calendar"
 end
 
 Then(/^I should be on the “Calendar” page$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(page).to have_content("Calendar")
 end
 
 Given(/^I am on “View Calendar”$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  visit calendar_path
 end
 
 When(/^I click on “Refresh”$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  puts ""
 end
 
 Then(/^I should be on “View Calendar”$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  puts ""
 end
